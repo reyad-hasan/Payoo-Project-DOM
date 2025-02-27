@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- title text -->
+    <title>Payooo-Mobile-Bank</title>
+    <!-- daisyUI and Tailwind CDN link here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.9/daisyui.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body class="max-w-screen-sm mx-auto max-h-screen">
+    <!-- login form -->
+    <section>
+        <header class="bg-gray-100 h-screen p-5 md:p-16">
+            <div class="flex flex-col items-center relative">
+                <img class="w-60 absolute" src="./assets/bg.png" alt="bg-png">
+                <img class="w-24 mt-8" src="./assets/Group.png" alt="Group img">
+            </div>
+            <div class="bg-base-100 w-full shadow-2xl mt-10 p-5 rounded-lg">
+                <form class="flex flex-col space-y-1">
+                    <label class="text-xl font-bold">Account Number</label>
+                    <input type="number" class="input w-full" placeholder="Your Number" />
+                    <label class="text-xl font-bold">PIN</label>
+                    <input type="number" class="input w-full" placeholder="Your PIN" />
+                    <div><a class="link link-hover">Forgot PIN?</a></div>
+                    <button class="btn btn-neutral mt-4 w-full hover:bg-blue-800">Login</button>
+                </form>
+            </div>
+        </header>
+    </section>
+
+</body>
+
+</html>
