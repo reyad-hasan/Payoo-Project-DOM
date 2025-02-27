@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- favicon link here -->
+    <link rel="shortcut icon" href="./assets/Group.png" type="image/x-icon">
     <!-- title text -->
     <title>Payooo-Mobile-Bank</title>
     <!-- daisyUI and Tailwind CDN link here -->
@@ -15,23 +17,27 @@
     <!-- login form -->
     <section>
         <header class="bg-gray-100 h-screen p-5 md:p-16">
+            <!-- logo box -->
             <div class="flex flex-col items-center relative">
                 <img class="w-60 absolute" src="./assets/bg.png" alt="bg-png">
                 <img class="w-24 mt-8" src="./assets/Group.png" alt="Group img">
             </div>
+            <!-- form box -->
             <div class="bg-base-100 w-full shadow-2xl mt-10 p-5 rounded-lg">
                 <form class="flex flex-col space-y-1">
                     <label class="text-xl font-bold">Account Number</label>
-                    <input type="number" class="input w-full" placeholder="Your Number" />
+                    <input value="01950325408" id="account-number" type="number" class="input w-full" placeholder="Your Number" required />
                     <label class="text-xl font-bold">PIN</label>
-                    <input type="number" class="input w-full" placeholder="Your PIN" />
+                    <input value="12345" id="account-pin" type="number" class="input w-full" placeholder="Your PIN" required />
                     <div><a class="link link-hover">Forgot PIN?</a></div>
-                    <button class="btn btn-neutral mt-4 w-full hover:bg-blue-800">Login</button>
+                    <button id="loginBtn" class="btn btn-neutral mt-4 w-full hover:bg-blue-800">Login</button>
                 </form>
             </div>
         </header>
     </section>
 
+
+    <script src="./js/login.js"></script>
 </body>
 
 </html>
